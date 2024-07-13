@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awww!S</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f8f0e3;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        video, audio {
+            display: block;
+            width: 100vw;
+            height: 100vh;
+            object-fit: cover;
+            pointer-events: none; /* Disable pointer events to prevent controls */
+        }
+    </style>
+</head>
+<body>
+    <video id="video" src="media/video.mp4" type="video/mp4" autoplay muted loop></video>
+    <audio id="audio" src="media/audio.mp3" type="audio/mp3"autoplay false loop></audio>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Play video and audio
+            document.getElementById('video').play();
+            document.getElementById('audio').play();
+        });
+
+        // Trigger playback on first click for some browsers
+        document.body.addEventListener('click', function () {
+            document.getElementById('video').play();
+            document.getElementById('audio').play();
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f8f0e3;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+#trustMeButton {
+    padding: 30px 60px; /* Increase padding for a larger size */
+    font-size: 28px; /* Increase font size */
+    color: #fff;
+    background-color: #2E4C45;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    position: absolute; /* Position absolutely for centering */
+    top: 50%; /* Move to 50% from the top */
+    left: 50%; /* Move to 50% from the left */
+    transform: translate(-50%, -50%);
+}
+
+#trustMeButton:hover {
+    background-color: #78A09C;
+    transform: translate(-50%, -50%) scale(1.1); /* Scale up and maintain center */
+}
+
